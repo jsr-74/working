@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPI QR Code</title>
+</head>
+<body>
+
+<h2>UPI QR Generator</h2>
+
+{% if qr_url %}
+    <h3>Generated QR Code:</h3>
+    <img src="{{ qr_url }}" alt="UPI QR Code">
+{% else %}
+    <p>Please provide UPI details in the URL.</p>
+{% endif %}
+
+</body>
+</html>
